@@ -1,0 +1,9 @@
+USE admissiondb;
+
+CREATE TABLE admission_form(
+id INT PRIMARY key,
+student_name VARCHAR(20),
+course ENUM('php','laravel','react','nodejs','mysql'),
+dob DATE,
+fee int
+);
