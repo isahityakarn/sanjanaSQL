@@ -7,3 +7,13 @@ course ENUM('php','laravel','react','nodejs','mysql'),
 dob DATE,
 fee int
 );
+
+
+
+SHOW COLUMNS from admission_form;
+
+
+INSERT INTO admission_form(id,student_name,fee,dob,course)VALUES(2,'sanjana',500,'2000-1-1','react');
+
+
+	SELECT *FROM admission_form;
