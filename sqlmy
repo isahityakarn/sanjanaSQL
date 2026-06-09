@@ -12,8 +12,30 @@ fee int
 
 SHOW COLUMNS from admission_form;
 
-
 INSERT INTO admission_form(id,student_name,fee,dob,course)VALUES(2,'sanjana',500,'2000-1-1','react');
 
+SELECT *FROM admission_form;
 
-	SELECT *FROM admission_form;
+-- CREATE TABLE course(
+-- id INT PRIMARY KEY auto_increment,
+-- fname VARCHAR(20),
+-- courase VARCHAR(20) UNIQUE,
+-- fee INT CHECK(fee>50),
+-- address VARCHAR(100)
+-- );
+
+
+-- INSERT INTO course(fname,courase,fee,address)values('rohan','tally',500,'janak');
+
+-- UPDATE course SET fee=300 where id=3;
+
+-- SELECT *FROM course;
+
+-- SELECT fname,fee FROM course;
+
+-- SELECT fname as"student name",fee FROM course;
+
+-- SELECT *FROM course WHERE fee>400;
+-- SELECT *FROM course WHERE address='janakpuri';
+
+-- SELECT *FROM course WHERE address LIKE'%jana%';
