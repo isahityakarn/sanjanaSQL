@@ -39,6 +39,7 @@ SELECT *FROM admission_form;
 -- SELECT *FROM course WHERE address='janakpuri';
 
 -- SELECT *FROM course WHERE address LIKE'%jana%';
+<<<<<<< HEAD
    
 
 
@@ -64,3 +65,34 @@ SELECT *FROM admission_form;
 -- SELECT *FROM employee_id WHERE salary>30000;
 -- SELECT *FROM employee_id WHERE address='ayodhya';
 -- SELECT *FROM employee_id WHERE emp_name LIKE'suh%';
+=======
+
+
+SELECT * FROM `admission_form`;
+
+SELECT * FROM `faddress` ;
+
+-- if join two table i colum should be refenences;
+SELECT af.*,fa.address,fa.phone FROM admission_form af LEFT JOIN faddress fa ON af.id=fa.add_id;
+
+SELECT af.*,fa.address,fa.phone FROM admission_form af right JOIN faddress fa ON af.id=fa.add_id;
+SELECT af.*,fa.address,fa.phone FROM faddress fa inner JOIN admission_form af ON fa.add_id=af.id;
+
+SELECT af.*,fa.course AS 'student course' FROM admission_form fa inner JOIN admission_form af ON af.id=fa.id;
+
+
+-- CREATE TABLE faddress(
+-- id INT AUTO_INCREMENT PRIMARY KEY,
+-- address VARCHAR(20),
+-- phone VARCHAR(20),
+-- add_id INT,
+--  FOREIGN KEY(add_id) REFERENCES admission_form(id)
+-- )
+
+-- DELETE FROM course WHERE id=3;
+-- DROP TABLE course;
+-- DELETE FROM course ;
+-- TRUNCATE TABLE course;
+
+-- INSERT INTO course (fname,courase,fee,address) values('mona','dit',600,'janakpuri'); 
+>>>>>>> db3bd3a624c8f7780476cc15a868470ac97368ee
