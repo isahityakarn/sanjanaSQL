@@ -1,0 +1,41 @@
+------------------NEW DATA-------------------
+-- USE maydb;
+-- CREATE TABLE admission_form(
+-- id INT PRIMARY KEY,
+-- student_name VARCHAR(20),
+-- course ENUM('html','css','java','c'),
+-- dob DATE,
+-- fee INT,
+-- qualification VARCHAR(20),
+-- phone VARCHAR(10),
+-- address VARCHAR(30),
+-- admission_date DATE,
+-- duration INT,
+-- class_time TIME, 
+-- fees INT);
+-- CREATE TABLE order_system(
+-- order_id INT,
+-- customer_name VARCHAR(20),
+-- quantity INT,
+-- amount INT,
+-- order_date DATE,
+-- delivery_date DATE);
+-- SELECT* FROM admission_form;
+--  INSERT INTO admission_form
+--  (id, student_name, course, dob, fee, qualification, phone, address, admission_date, duration, class_time, fees)
+--   VALUES
+ --  (40, 'kartik','java', '2006-05-20', 1500, '152', '9373637373', 'fsgshdbdnf', '2026-06-02', 25, '10', 3000);
+-- SELECT* FROM admission_form
+-- INSERT INTO order_system(order_id,customer_name,quantity,amount,order_date,delivery_date) VALUES
+-- (40,'aastha',200,300,'2026-06-10','2026-06-10');
+-- SELECT* FROM order_system;
+-- SELECT *FROM admission_form a
+-- LEFT JOIN order_system o
+-- ON a.student_name = o.customer_name;
+-- SELECT *FROM admission_form a RIGHT JOIN order_system o ON a.student_name = o.customer_name;
+-- SELECT *FROM admission_form a INNER JOIN order_system o ON a.student_name = o.customer_name;
+-- DELETE FROM admission_form WHERE id =40;
+-- DROP table order_system;
+-- TRUNCATE TABLE admission_form;
+-- INSERT INTO admission_form(id, student_name, course, dob, fee, qualification, phone, address, admission_date, duration, class_time, fees)   VALUES
+--  (46, 'khusboo','java', '2006-05-20', 1500, '152', '9373637373', 'fsgshdbdnf', '2026-06-02', 25, '10', 3000);

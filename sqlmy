@@ -95,4 +95,6 @@ SELECT af.*,fa.course AS 'student course' FROM admission_form fa inner JOIN admi
 -- TRUNCATE TABLE course;
 
 -- INSERT INTO course (fname,courase,fee,address) values('mona','dit',600,'janakpuri'); 
->>>>>>> db3bd3a624c8f7780476cc15a868470ac97368ee
+ 
+
+
